@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Pictune</title>
+<link rel="shortcut icon" href="images/pictune.ico">
+<link href='css/style.css' rel='stylesheet' type='text/css'>
+<style>
+body {
+	background-image: url("images/fondo PRINCIPAL.png");
+}
+#store{
+	margin-left: 115px;
+	margin-top: 60px;
+}
+#title{
+	margin-top: 40px; 
+	height: 70px; 
+	margin-left: 80px;
+}
+@media screen and (max-width: 750px) {
+	#logo{
+		margin-left: 5px;
+		margin-top: 20px;
+	}
+	#logo img{
+		width: 170px;
+	}
+	#central_section {
+		left: 0px;
+		margin-left: 100px;
+	}
+	nav{
+		left: 30px;
+	}
+	#title, #store{
+		display: none;
+	}
+}
+</style>
+</head>
+<body>
+	<div id="wrapper">
+		<aside>
+			<header>
+			<div id="logo">
+				<img src="images/Pictune logo.png">
+			</div>
+			</header>
+			<section id="store">
+				<img src="images/store.png">
+				<p>
+					Haz una foto<br>
+					Transforma su aspecto<br>
+					escucha c&oacute;mo suena<br>
+					y publica en Pictune<br>
+					Es una nueva manera de ver<br>
+					y escuchar el mundo.
+				</p>
+			</section>
+		</aside>
+		<section>
+			<ul id="social">
+				<li><a href="https://www.facebook.com/Pictuneapp" target="_blank"><img src="images/icons/facebook.png"></a></li>
+				<li><a href="https://www.youtube.com/user/PictuneMe/" target="_blank"><img src="images/icons/youtube.png"></a></li>
+				<li><a href="https://twitter.com/pictuneme" target="_blank"><img src="images/icons/twitter.png" target="_blank"></a></li>
+			</ul>
+		</section>
+		<section id="central_section">
+			<div id="title">
+				<img src="images/titular.png">
+			</div>
+			<section id="iphone">
+				<img src="images/celular.png">
+				<div id="carousel">
+					<img src="images/slide1.jpg">
+					<img src="images/slide2.jpg">
+					<img src="images/slide3.jpg">
+					<img src="images/slide4.jpg">
+					<img src="images/slide5.jpg">
+					<img src="images/slide6.jpg">
+				</div>
+			</section>
+		</section>
+		<section style="position: relative; left: 330px;">
+			<nav>
+				<a href="/html/">NOSOTROS</a> |
+				<a href="faq.html">SOPORTE</a> |
+				<a href="/js/">BLOG</a> |
+				<a href="/js/">API</a> |
+				<a href="/jquery/">PRIVACIDAD</a>
+			</nav>
+		</section>
+	</div>
+</body>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	var counter = 0;
+	var listItems = $("#carousel").find("img");
+	function showImage(counter){
+		$(listItems).hide();
+		$(listItems[counter]).fadeToggle();
+	};
+	showImage(counter);
+	setInterval(function(){ showImage(counter = ((counter + 1) % 6)); }, 5000);
+});
+</script>
+</html> 
