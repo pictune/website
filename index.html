@@ -3,6 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <title>Pictune</title>
+<meta name="description" content="An easy and fun way to share music created by you from images.">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="shortcut icon" href="images/pictune.ico">
 <link href='css/style.css' rel='stylesheet' type='text/css'>
 <style>
@@ -11,14 +13,22 @@ body {
 }
 #store{
 	margin-left: 115px;
-	margin-top: 60px;
+	margin-top: 10px;
 }
 #title{
 	margin-top: 40px; 
 	height: 70px; 
 	margin-left: 80px;
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 950px) {
+	#title{
+		display: none;
+	}
+}
+@media screen and (max-width: 850px) {
+	body {
+		background-size: cover;
+	}
 	#logo{
 		margin-left: 5px;
 		margin-top: 20px;
@@ -30,10 +40,18 @@ body {
 		left: 0px;
 		margin-left: 100px;
 	}
+	#iphone {
+		margin-top: 80px;
+	}
+	#social{
+		top: 10px;
+		right: 5px;
+		margin-left: 170px;
+	}
 	nav{
 		left: 30px;
 	}
-	#title, #store{
+	#store{
 		display: none;
 	}
 }
@@ -44,7 +62,7 @@ body {
 		<aside>
 			<header>
 			<div id="logo">
-				<img src="images/Pictune logo.png">
+				<a href="index.html"><img src="images/Pictune logo.png"></a>
 			</div>
 			</header>
 			<section id="store">
@@ -59,13 +77,6 @@ body {
 				</p>
 			</section>
 		</aside>
-		<section>
-			<ul id="social">
-				<li><a href="https://www.facebook.com/Pictuneapp" target="_blank"><img src="images/icons/facebook.png"></a></li>
-				<li><a href="https://www.youtube.com/user/PictuneMe/" target="_blank"><img src="images/icons/youtube.png"></a></li>
-				<li><a href="https://twitter.com/pictuneme" target="_blank"><img src="images/icons/twitter.png" target="_blank"></a></li>
-			</ul>
-		</section>
 		<section id="central_section">
 			<div id="title">
 				<img src="images/titular.png">
@@ -85,11 +96,15 @@ body {
 		<section style="position: relative; left: 330px;">
 			<nav>
 				<a href="/html/">NOSOTROS</a> |
-				<a href="faq.html">SOPORTE</a> |
-				<a href="/js/">BLOG</a> |
-				<a href="/js/">API</a> |
-				<a href="/jquery/">PRIVACIDAD</a>
+				<a href="faq.html">SOPORTE</a>
 			</nav>
+		</section>
+		<section>
+			<ul id="social">
+				<li><a href="https://www.facebook.com/PictuneApp" target="_blank"><img src="images/icons/facebook.png"></a></li>
+				<li><a href="https://www.youtube.com/user/PictuneMe/" target="_blank"><img src="images/icons/youtube.png"></a></li>
+				<li><a href="https://twitter.com/pictuneApp" target="_blank"><img src="images/icons/twitter.png" target="_blank"></a></li>
+			</ul>
 		</section>
 	</div>
 </body>
