@@ -3,6 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <title>Pictune</title>
+<meta name="description" content="An easy and fun way to share music created by you from images.">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="shortcut icon" href="images/pictune.ico">
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
 <link href='css/style.css' rel='stylesheet' type='text/css'>
@@ -11,15 +13,23 @@ body {
 	background-image: url("images/fondo FAQ.png");
 }
 @media screen and (max-width: 700px) {
+	body {
+		background-size: cover;
+	}
 	#logo{
 		margin-left: 5px;
 	}
 	#logo img{
-	width: 170px;
+		width: 170px;
 	}
 	#central_section {
 		left: 0px;
 		margin-left: 200px;
+	}
+	#social{
+		top: 30px;
+		right: 5px;
+		margin-left: 170px;
 	}
 	nav{
 		left: 30px;
@@ -31,8 +41,8 @@ body {
 	<div id="wrapper">
 		<aside>
 			<header>
-			<div id="logo">
-				<img src="images/Pictune logo.png">
+			<div id="logo">	
+				<a href="index.html"><img src="images/Pictune logo.png"></a>
 			</div>
 			</header>
 			<section>
@@ -55,13 +65,6 @@ body {
 				</div>
 			</section>
 		</aside>
-		<section>
-			<ul id="social">
-				<li><a href="https://www.facebook.com/Pictuneapp" target="_blank"><img src="images/icons/facebook.png"></a></li>
-				<li><a href="https://www.youtube.com/user/PictuneMe/" target="_blank"><img src="images/icons/youtube.png"></a></li>
-				<li><a href="https://twitter.com/pictuneme" target="_blank"><img src="images/icons/twitter.png" target="_blank"></a></li>
-			</ul>
-		</section>
 		<section id="central_section">
 			<section id="content">
 				<div id="faq">
@@ -117,14 +120,12 @@ body {
 				<div id="news" style="display:none;">Novedades</div>
 		    </section>
 		</section>
-		<section style="position: relative; left: 330px;">
-			<nav>
-				<a href="/html/">NOSOTROS</a> |
-				<a href="faq.html">SOPORTE</a> |
-				<a href="/js/">BLOG</a> |
-				<a href="/js/">API</a> |
-				<a href="/jquery/">PRIVACIDAD</a>
-			</nav>
+		<section>
+			<ul id="social">
+				<li><a href="https://www.facebook.com/PictuneApp" target="_blank"><img src="images/icons/facebook.png"></a></li>
+				<li><a href="https://www.youtube.com/user/PictuneMe/" target="_blank"><img src="images/icons/youtube.png"></a></li>
+				<li><a href="https://twitter.com/PictuneApp" target="_blank"><img src="images/icons/twitter.png" target="_blank"></a></li>
+			</ul>
 		</section>
 	</div>
 </body>
