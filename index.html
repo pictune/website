@@ -7,6 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="shortcut icon" href="images/pictune.ico">
 <link href='css/style.css' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Bad+Script' rel='stylesheet' type='text/css' />
 <style>
 body {
 	background-image: url("images/fondo PRINCIPAL.png");
@@ -15,11 +16,29 @@ body {
 	margin-left: 115px;
 	margin-top: 10px;
 }
-#title{
-	margin-top: 40px; 
-	height: 70px; 
-	margin-left: 80px;
+#store a{
+	display:inline-block;
+	overflow:hidden;
+	background:url(http://linkmaker.itunes.apple.com/images/badges/en-us/badge_appstore-lrg.png) no-repeat;
+	width:165px;
+	height:40px;
+	@media only screen{
+		background-image:url(http://linkmaker.itunes.apple.com/images/badges/en-us/badge_appstore-lrg.svg);
+	}
 }
+#title{
+	height: 70px; 
+	margin-left: 120px;
+	margin-bottom: 40px;
+	color: #000;
+}
+h4{
+	font-family: 'Bad Script';
+	margin-top: 20px;
+	line-height: 1.2;
+	font-size: 1em;
+}
+
 @media screen and (max-width: 950px) {
 	#title{
 		display: none;
@@ -66,7 +85,7 @@ body {
 			</div>
 			</header>
 			<section id="store">
-				<a href="https://geo.itunes.apple.com/ve/app/pictune-app/id983298331?mt=8&uo=6" target="itunes_store" style="display:inline-block;overflow:hidden;background:url(http://linkmaker.itunes.apple.com/images/badges/en-us/badge_appstore-lrg.png) no-repeat;width:165px;height:40px;@media only screen{background-image:url(http://linkmaker.itunes.apple.com/images/badges/en-us/badge_appstore-lrg.svg);}"></a>
+				<a href="https://geo.itunes.apple.com/ve/app/pictune-app/id983298331?mt=8&uo=6" target="itunes_store"></a>
 				<p>
 					Haz una foto<br>
 					Transforma su aspecto<br>
@@ -79,7 +98,8 @@ body {
 		</aside>
 		<section id="central_section">
 			<div id="title">
-				<img src="images/titular.png">
+				<h4>Una forma r&aacute;pida y divertida de compartir<br>
+					m&uacute;sica creada por ti a partir de im&aacute;genes</h4>
 			</div>
 			<section id="iphone">
 				<img src="images/celular.png">
