@@ -12,7 +12,7 @@ body {
 aside {
 	float: left; 
 	position: fixed; 
-	width: 280px;
+	width: 250px;
 	min-width: 200px;
 	margin-left: 100px;
     margin-top: 5%;
@@ -45,9 +45,10 @@ nav a{
 	margin-left: 15px;
 }
 #logo{
-	padding: 5px;
-	border: 2px solid #000;
+	border: 1px solid #eee;
+	box-shadow: 0 2px 3px #bbb;
 	font-size: 24px;
+	padding: 5px 5px 5px 15px
 }
 #logo img{
 	width: 220px;

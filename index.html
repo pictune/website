@@ -7,7 +7,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="shortcut icon" href="images/pictune.ico">
 <link href='css/style.css' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Bad+Script' rel='stylesheet' type='text/css' />
 <style>
 body {
 	background-image: url("images/fondo PRINCIPAL.png");
@@ -28,20 +27,19 @@ body {
 }
 #title{
 	height: 70px; 
-	margin-left: 120px;
+	text-align: center;
 	margin-bottom: 40px;
 	color: #000;
 }
 h4{
-	font-family: 'Bad Script';
 	margin-top: 20px;
 	line-height: 1.2;
-	font-size: 1em;
+	font-size: 2em;
 }
 
 @media screen and (max-width: 950px) {
-	#title{
-		display: none;
+	h4{
+		font-size: 1em;
 	}
 }
 @media screen and (max-width: 850px) {
@@ -57,10 +55,22 @@ h4{
 	}
 	#central_section {
 		left: 0px;
-		margin-left: 100px;
+		top: 160px;
+		margin-left: 30px;
+	}
+	#title{
+		height: inherit;
+		margin-left: 30px;
+		margin-bottom: 10px;
+		text-align: left;
+	}
+	h4{
+		margin-top: 0px;
+		line-height: 1;
+		font-size: 1em;
 	}
 	#iphone {
-		margin-top: 80px;
+		margin-top: 20px;
 	}
 	#social{
 		top: 10px;
@@ -70,7 +80,10 @@ h4{
 	nav{
 		left: 30px;
 	}
-	#store{
+	#store p{
+		margin-top: 0;
+	}
+	#store p{
 		display: none;
 	}
 }
@@ -115,7 +128,7 @@ h4{
 		</section>
 		<section style="position: relative; left: 330px;">
 			<nav>
-				<a href="/html/">NOSOTROS</a> |
+				<a href="salamendoza/Grid.html" target="_blank">PICTUNES</a> |
 				<a href="faq.html">SOPORTE</a>
 			</nav>
 		</section>
