@@ -6,163 +6,139 @@
 <meta name="description" content="An easy and fun way to share music created by you from images.">
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="shortcut icon" href="images/pictune.ico">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 <link href='css/style.css' rel='stylesheet' type='text/css'>
-<style type="text/css">
+<style>
 body {
 	background-image: url("images/fondo FAQ.png");
 }
-@media screen and (max-width: 700px) {
-	body {
-		background-size: cover;
-	}
-	#logo{
-		margin-left: 5px;
-	}
-	#logo img{
-		width: 170px;
-	}
-	#central_section {
-		left: 0px;
-		margin-left: 200px;
-	}
-	#social{
-		top: 30px;
-		right: 5px;
-		margin-left: 170px;
-	}
-	nav{
-		left: 30px;
-	}
+@media (max-width: 480px) {
+	#title{ font-size: 1.3em !important;}
 }
 </style>
 </head>
 <body>
-	<div id="wrapper">
-		<aside>
-			<header>
-			<div id="logo">	
-				<a href="index.html"><img src="images/Pictune logo.png"></a>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-3" align="center">
+				<div id="logo">
+					<a href="index.html"><img class="img-responsive" src="images/Pictune logo.png"></a>
+				</div>
 			</div>
-			</header>
-			<section>
+			<div  class="col-md-7"></div>
+			<div class="col-md-2" align="center">
+				<section>
+					<ul id="social">
+						<li><a href="https://www.facebook.com/PictuneApp" target="_blank"><img src="images/icons/Bfacebook.png"></a></li>
+						<li><a href="https://www.youtube.com/user/PictuneMe/" target="_blank"><img src="images/icons/Byoutube.png"></a></li>
+						<li><a href="https://twitter.com/pictuneApp" target="_blank"><img src="images/icons/Btwitter.png"></a></li>
+						<li><a href="https://instagram.com/pictuneApp" target="_blank"><img src="images/icons/Binstagram.png"></a></li>
+						<li><a href="mailto:contact@pictune.me" target="_blank"><img src="images/icons/Bemail.png"></a></li>
+					</ul>
+				</section>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3" align="center">
 				<div id="v-menu">
-					<ul>
-						<li><img width="25px" src="images/HOME.png"><span id="title">Support</span></li>
+					<ul id="tab-menu" class="nav nav-stacked">
+						<li><span id="title"><img width="30px" src="images/HOME.png">Soporte</span></li>
 						<li>
-							<a id="faq_link" href="#faq">FAQ
-							<img id="play_faq" src="images/selection.png">
+							<a id="faq_link" data-toggle="tab" href="#faq">FAQ
+							<img src="images/selection.png">
 						</a></li>
 						<!--<li>
-							<a id="dictionary_link" href="#dictionary">Conceptos b&aacute;sicos
-							<img id="play_dictionary" style="display:none;" src="images/selection.png">
+							<a id="dictionary_link" data-toggle="tab" href="#dictionary">Conceptos b&aacute;sicos
+							<img style="display:none;" src="images/selection.png">
 						</a></li>
 						<li>
-							<a id="news_link" href="#news">Novedades
-							<img id="play_news" style="display:none;" src="images/selection.png">
+							<a id="news_link" data-toggle="tab" href="#news">Novedades
+							<img style="display:none;" src="images/selection.png">
 						</a></li>-->
 					</ul>
 				</div>
-			</section>
-		</aside>
-		<section id="central_section">
-			<section id="content">
-				<div id="faq">
-					<article>
-						FREQUENTLY ASKED QUESTIONS (FAQ)
-						<br><br>
-						This is a brief list of the more frequent questions we receive. In order to get<br> 
-						more information about Pictune, or if you need to reach us, please write to<br>
-						contact@pictune.me
-						<br><br>
-						What is Pictune?
-						<br><br>
-						Pictune is a quick, great and fun way of composing music through images.<br> 
-						Take a picture and listen how it sounds. It is a new way of seeing and<br> 
-						listening to the world. Define how this instant sounds.<br>
-						Currently, we are developing more functions into Pictune, so that you can <br>
-						intervene the photos with filters and drawings. Additionally, we wish you to <br>
-						share your creations with other people around the world. That is why we <br>
-						are also building a social net where it will be easy to publish your Pictunes<br>
-						and see your friend’s Pictunes. We are working at Pictunes to let you <br>
-						experience some special moments through images and music.
-						<br><br>
-						How much does it cost?
-						<br><br>
-						US$ 0.00- It is available for free at the Apple’s App Store.
-						<br><br>
-						How did the idea come up?
-						<br><br>
-						We love to take pictures and we love music. We believe that music is <br>
-						a universal language that we can use to communicate without words. <br>
-						Normally, in order to compose, one needs technical knowledge, years of <br>
-						study. Pictune is a simple way to get anybody closer to musical composition.<br> 
-						Through something as easy as taking a picture with a mobile and editing it, <br>
-						intervening it with drawings, anybody can compose music.
-						<br><br>
-						At Pictune, we want to answer this question: How does this instant sound?<br>
-						<br><br>
-						Are we hiring?
-						<br><br>
-						Absolutely yes! If you are a talented engineer or designer, we would like to <br>
-						speak to you. The best way to get in touch with us is to send an e-mail to: <br>
-						contact@pictune.me
-						<br><br>
-						How can I share my Pictunes?
-						<br><br>
-						At this moment, we are developing new functions so that you can share your <br>
-						Pictunes in our social net and in other nets as well, such as Twitter, Instagram<br> 
-						and Facebook. Furthermore, each Pictune you make can be stored in your <br>
-						mobile phone.<br>
-					</article>
+			</div>
+			<div  class="col-md-7 tab-content">
+				<div id="faq" class="content tab-pane fade in active">
+					<h4>PREGUNTAS FRECUENTES (FAQ)</h4><br>
+					Esta es una breve lista de las preguntas m&aacute;s frecuentes que recibimos. Para<br>
+					obtener informaci&oacute;n sobre Pictune, o si necesitas comunicarte con nosotros, por favor<br>
+					escribe a <a href="mailto:contact@pictune.me" target="_top">contact@pictune.me</a>.
+					<br><br>
+					<h5>&iquest;Qu&eacute; es Pictune?</h5>
+					Pictune es una forma r&aacute;pida, genial y divertida de componer musica a traves de imagenes.<br>
+					Toma una foto y oye como suena. Es una nueva manera de ver y escuchar el mundo.<br>
+					Define como suena este instante.<br>
+					Actualmente, estamos desarrollando m&aacute;s funcionalidades, as&iacute; podr&aacute;s intervenir las<br>
+					im&aacute;genes con filtros o dibujos. Adicionalmente, deseamos que compartas tus creaciones<br>
+					con otras personas alrededor del mundo. Por ello tambi&eacute;n estamos creando una red<br>
+					social donde ser&aacute; f&aacute;cil publicar tus Pictunes y ver los Pictunes de tus amigos.<br>
+					En Pictune estamos trabajando para que puedas experimentar momentos especiales<br>
+					a trav&eacute;s de im&aacute;genes y m&uacute;sica.
+					<br><br>
+					<h5>&iquest;Cu&aacute;nto cuesta?</h5>
+					US$ 0.00- Est&aacute; disponible gratis en el App Store de Apple.
+					<br><br>
+					<h5>&iquest;C&oacute;mo surgi&oacute; la idea?</h5>
+					Nos gusta tomar fotograf&iacute;as y amamos la m&uacute;sica. Creemos que<br>
+					la m&uacute;sica es un lenguaje universal que podemos usar para comunicar sin palabras.<br>
+					Normalmente para componer necesitamos conocimiento t&aacute;cnico, y a&ntilde;os de estudio.<br>
+					Pictune es una manera f&aacute;cil de acercar a cualquier persona a la composici&oacute;n musical.<br>
+					A trav&eacute;s de algo tan simple como tomar una foto con tu dispositivo m&oacute;vil y editarla, <br>
+					cualquier persona puede componer m&uacute;sica.<br>
+					En Pictune queremos responder esta pregunta: C&oacute;mo suena este instante?
+					<br><br>
+					<h5>&iquest;C&oacute;mo puedo compartir mis Pictunes?</h5>
+					En este mometo, estamos trabando en nuevas funciones para que puedas compartir tus <br>
+					Pictunes tanto en nuestra red social como en Twitter, Instagram y Facebook. <br> 
+					Adem&aacute;s, podr&aacute;s conservar cada Pictune que crees en la galer&iacute;a de tu celular.
+					<br><br>
+					<h5>&iquest;Estamos buscando talento?</h5>
+					Claro que s&iacute;! Si eres un ingeniero o dise&ntilde;ador talentoso, nos guatar&iacute;a hablar<br>
+					contigo. La mejor forma de contactarnos es enviando un email a: <a href="mailto:contact@pictune.me" target="_top">contact@pictune.me</a>
 				</div>
-				<div id="dictionary" style="display:none;">Conceptos b&aacute;sicos</div>
-				<div id="news" style="display:none;">Novedades</div>
-		    </section>
-		</section>
-		<section>
-			<ul id="social">
-				<li><a href="https://www.facebook.com/PictuneApp" target="_blank"><img src="images/icons/facebook.png"></a></li>
-				<li><a href="https://www.youtube.com/user/PictuneMe/" target="_blank"><img src="images/icons/youtube.png"></a></li>
-				<li><a href="https://twitter.com/PictuneApp" target="_blank"><img src="images/icons/twitter.png" target="_blank"></a></li>
-			</ul>
-		</section>
+				<div id="dictionary" class="content tab-pane fade">Conceptos b&aacute;sicos</div>
+				<div id="news" class="content tab-pane fade">Novedades</div>
+			</div>
+		</div>
+		<div class="row">
+		<div>
+			<div id="menu" align="center">
+				<nav>
+					<a href="salamendoza/Grid.html" target="_blank"><img src="images/yellow.png">PICTUNES</a> |
+					<a href="faq.html" class="active_link"><img src="images/blue.png">SOPORTE</a> <!--|
+					<a href="salamendoza/Grid.html" target="_blank"><img src="images/pink.png">CONT&Aacute;TANOS </a>-->
+				</nav>
+			</div>
+		</div>
 	</div>
+	</div>
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){ 
+			$("#tab-menu li:eq(1) a").tab('show');
+			$("#faq_link").click(function(){
+				$("#tab-menu  a").find("img").hide();
+				$("#faq_link").find("img").fadeToggle();
+			});
+			$("#dictionary_link").click(function(){
+				$("#tab-menu a").find("img").hide();
+				$("#dictionary_link").find("img").fadeToggle();
+			});
+			$("#news_link").click(function(){
+				$("#tab-menu a").find("img").hide();
+				$("#news_link").find("img").fadeToggle();
+			});
+		});
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-64314784-1', 'auto');
+		ga('send', 'pageview');
+	</script>
 </body>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script>
-	$(document).ready(function(){
-		$("#faq_link").click(function(){
-			$("#faq").show();
-			$("#dictionary").hide();
-			$("#news").hide();
-			$("#play_faq").show();
-			$("#play_dictionary").hide();
-			$("#play_news").hide();
-		});
-		$("#dictionary_link").click(function(){
-			$("#faq").hide();
-			$("#dictionary").show();
-			$("#news").hide();
-			$("#play_faq").hide();
-			$("#play_dictionary").show();
-			$("#play_news").hide();
-		});
-		$("#news_link").click(function(){
-			$("#faq").hide();
-			$("#dictionary").hide();
-			$("#news").show();
-			$("#play_faq").hide();
-			$("#play_dictionary").hide();
-			$("#play_news").show();
-		});
-	});
-</script>
-<script>
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-	ga('create', 'UA-64314784-1', 'auto');
-	ga('send', 'pageview');
-</script>
 </html> 
