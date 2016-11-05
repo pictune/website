@@ -196,10 +196,9 @@ width: 50px;
 }
 
 .email-footer {
-    padding-left: 45%;
-    padding-right: 40%;
-    color:white;
+    color: white;
     text-align: center;
+    padding-top: 2%;
 }
 
 .title {
@@ -240,11 +239,14 @@ width: 50px;
     padding-top: 10%;
 }
 
-.network {
-    margin-top: 10%;
-    padding-right: 44%;
+.network-facebook{
+    text-align: right;
     padding-left: 44%;
-    margin-bottom: 1%;
+}
+
+.network-twitter{
+    text-align: left;
+    padding-right: 44%;
 }
 
 body {
