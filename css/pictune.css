@@ -25,6 +25,12 @@ h6 {
     font-size: 14px; 
 }
 
+.rightnav{
+    text-align: right;
+    vertical-align: middle;
+    margin-top: 1.5%;
+}
+
 .lead {
     font-size: 18px;
     font-weight: 400;
@@ -187,7 +193,7 @@ width: 50px;
 }
 
 .twitter{
-width: 50px;
+width: 50px;;
 }
 
 .img-header{
