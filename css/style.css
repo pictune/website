@@ -1,0 +1,116 @@
+body {
+	background-attachment: fixed;
+	background-position: center; 
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	color: #777 !important;
+	font-weight: bold;
+}
+/*Home*/
+#logo{
+	margin-top: 40px;
+	height: 80px;
+}
+#logo img{
+	width: 270px;
+}
+#title{
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	line-height: 1.2;
+	font-size: 1.8em;
+	font-weight: normal;
+}
+#social{
+	margin-top: 40px; 
+	list-style: none;
+	padding: 0;
+}
+#social li { display: inline; }
+#social img{ width: 30px;}
+#social a{
+	margin-right: 5px;
+	text-decoration: none;
+}
+#store a{
+	display:inline-block;
+	overflow:hidden;
+	background:url(http://linkmaker.itunes.apple.com/images/badges/en-us/badge_appstore-lrg.png) no-repeat;
+	width:135px;
+	height:40px;
+	@media only screen{
+		background-image:url(http://linkmaker.itunes.apple.com/images/badges/en-us/badge_appstore-lrg.svg);
+	}
+}
+#iphone img{
+	width: 700px;
+	display: none;
+}
+#description{
+	margin-top: 20px;
+	font-weight: normal;
+}
+#menu{
+	margin-top: 40px; 
+	padding: 10px 5px;
+	height: auto;
+	font-size: .8em;
+	font-weight: bold;
+}
+nav a{
+	margin-left: 40px;
+	margin-right: 30px;
+}
+#menu img{
+	height: 1em;
+    margin: 0 10px 2px 0;
+}
+a{
+	text-decoration: none !important;
+	color: #777 !important;
+}
+a:hover, a:focus{
+	text-decoration: none !important;
+	color: #000 !important;
+	background-color: transparent !important;
+}
+/*FAQ*/
+#faq{ font-weight: normal;}
+.active_link{ color: #000 !important}
+h5{ font-weight: bold;}
+#v-menu { margin-bottom: 20px;}
+#v-menu li {
+	border-bottom: 1px solid #aaa;
+	width: 70%;
+	min-width: 270px;
+}
+#v-menu li a {
+	display: block;
+	padding: 5px;
+	text-decoration: none;
+	width: 270px;
+	text-align: justify;
+}
+#v-menu li a img{
+	float: right;
+	height: 1em;
+	margin-top: 2px;
+}
+span#title img{ padding-bottom: 7px;}
+.content{
+	position: inherit; 
+	width: :80%;
+	margin: 0 20px;
+	background-color: #fff;
+}
+@media only screen and (max-width : 992px) {
+	#social{
+		margin-top: 0; 
+	}
+}
+@media only screen and (max-width : 768px) {
+	body{ 
+		background-size: cover;
+	}
+}
